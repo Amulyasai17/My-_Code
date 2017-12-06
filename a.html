@@ -1,0 +1,26 @@
+
+
+
+<body>            
+    <p><strong>Example 4: swapping numbers with a temporary variable</strong></p>
+    Enter a number for x : <input type="text" id="numOne"> <br>
+    Enter a number for y : <input type="text" id="numTwo" > <br>
+    <button type="button" onClick="swap()">Print</button> <br>
+    The number is : <span id="demo"></span>
+</body>
+
+
+<script>
+    function swap() {
+        var x = numOne.value;
+        var y = numTwo.value;
+        var tmp = x, x = y, y = tmp;
+        
+        // numOne.value=x;
+        // numTwo.value=y;
+
+        var span = document.getElementById("demo");
+        span.innerHTML =("Value of X=" + x + " and value of Y=" + y);
+    }
+    
+</script>
