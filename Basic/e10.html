@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function multiply(x, y) {
+                var result = x * y;
+                var span = document.getElementById("result");
+                span.innerHTML = result;
+            }
+
+            function divide(x,y) {
+                var result = x/y;
+                var span = document.getElementById("result");
+                span.innerHTML = result;
+            }
+
+
+        </script>
+    </head>
+
+    <body>
+        <p><strong> Multiplication and Division </strong></p>
+        Enter first number : <input type="text" id="firstNum1"> <br>
+        Enter second number : <input type="text" id="secondNum1"> <br>
+        <button type="button" onClick="multiply(firstNum1.value, secondNum1.value)">Multiply</button>
+        <button type="button" onClick="divide(firstNum1.value, secondNum1.value)">Divide</button> <br>
+        The result is : <span id="result"></span>
+
+    </body>
+</html>

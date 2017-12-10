@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function difference(num1) {
+                var result="";
+                if (num1 >= 13) {
+                result= (num1-13)*2;
+                }
+                else 
+                {
+                result = false;
+                }
+                var span = document.getElementById("result");
+                span.innerHTML =result;  
+            }
+                        
+        </script>
+    </head>
+    <body>
+        Enter first number : <input type="text" id="num1"> <br>
+        <button type="button" onClick="difference(num1.value)"> click here </button> <br>
+        The result is : <span id="result"> </span>
+    </body>
+</html>

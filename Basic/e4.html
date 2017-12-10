@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+
+            // var base=5;
+            // var height=6;
+            // var c=7;
+            // var area= (base*height)/2;
+            // document.write("Area of the Triangle is : " + area);
+
+            // function areaofTriangle() {    
+            //     var base="firstNum.value";
+            //     var height="secondNum.value";
+            //     var area= (base*height)/2;
+            //     var span = document.getElementById("demo");
+            //     span.innerHTML =area;         
+            // }
+
+            var a = 5; 
+            var b = 6;
+            var c = 7;
+            var p = (a+b+c)/2;
+            var area = Math.sqrt(p*((p-a)*(p-b)*(p-c)));
+            document.write("The area is : " + area);
+
+        </script>
+    </head>
+    <body>
+        <!-- <p> <strong> Area of the Triangle </strong> </p>
+        Enter base : <input type="text" id="firstNum"> <br>
+        Enter height : <input type="text" id="secondNum"> <br>
+        <button type="button" onClick="areaofTriangle()">Click</button> <br>
+        The area is : <span id="demo"></span> -->
+    </body>
+</html>

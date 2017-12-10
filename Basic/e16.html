@@ -1,0 +1,27 @@
+<html>
+        <head>
+            <script>
+                function sum() {
+                    var a= parseInt(num1.value);
+                    var b=parseInt(num2.value);
+                    var result="";
+                    if (a === b) {
+                    result= (a + b)*3;
+                    }
+                    else 
+                    {
+                    result = a+b;
+                    }
+                    var span = document.getElementById("result");
+                    span.innerHTML =result;  
+                }
+                            
+            </script>
+        </head>
+        <body>
+            Enter first number : <input type="text" id="num1"> <br>
+            Enter second number : <input type="text" id="num2"> <br>        
+            <button type="button" onClick="sum()"> click here </button> <br>
+            The result is : <span id="result"> </span>
+        </body>
+    </html>

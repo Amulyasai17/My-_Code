@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function cTOf(celsius) {  
+                //var celsius = prompt("celsius?");
+                var result = 1.8*celsius + 32;
+                var span = document.getElementById("result");
+                span.innerHTML = result;
+            }
+
+            function fTOc(farenheit) {
+                //var farenheit = prompt("FAHRENHEIT?");
+                var result = 5/9*(farenheit - 32);
+                var span = document.getElementById("result");
+                span.innerHTML = result;
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <p><strong> Converting C to F and F to C </strong></p>
+        Enter the temperature : <input type="text" id="firstNum1"> <br>
+        <button type="button" onClick="cTOf(firstNum1.value)"> Convert from C to F</button>
+        <button type="button" onClick="fTOc(firstNum1.value)"> Convert from F to C</button> <br>
+        The result is : <br> <span id="result"></span>
+    
+    </body>
+</html>
