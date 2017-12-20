@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function alphaOrder(x) {  
+               var result = x.split("").sort().join("");
+               var span = document.getElementById("result");
+               span.innerHTML = result;
+            }
+        </script>
+    </head>
+
+    <body>
+        <p><strong> Converting to Alphabetical Order </strong></p>
+        Enter Here : <input type="text" id="firstNum1"> <br>
+        <button type="button" onClick="alphaOrder(firstNum1.value)"> Click </button> <br>
+        The result is : <br> <span id="result"></span>
+    
+    </body>
+    </html>
