@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function combo(text) {
+                var results = [];
+                for (var i = 0; i < text.length; i++) {
+                var resultsLength = results.length;
+                for (var j = 0; j < resultsLength; j++) {
+                results.push(text[i] + results[j]);
+                }
+                results.push(text[i]);
+                }                
+                var span = document.getElementById("result");
+                span.innerHTML = results;
+            }
+        </script>
+    </head>
+    <body>
+        <p><strong> Combinations of a string </strong> </p>
+        Enter : <input type="text" id="num"> <br>
+        <button type="button" onClick="combo(num.value)"> Click </button> <br>
+        The result is : <span id="result"></span>
+    </body>
+</html>

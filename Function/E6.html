@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            function largestWord(str) {
+                var a = str.split('');
+                var result = Math.max(a[0].length, a[1].length, a[2].length);
+                for( i=0; i<a.length; i++) {
+                    if ( a[i].length == result) {
+                        return a[i];
+                    }
+                }
+                var span = document.getElementById("result");
+                span.innerHTML = a;
+            }
+
+        </script>
+    </head>
+    <body>
+        <p><strong> Longest Word </strong></p>
+        Enter Here : <input type="text" id="firstNum1"> <br>
+        <button type="button" onClick="largestWord(firstNum1.value)"> Click </button> <br>
+        The result is : <br> <span id="result"></span>
+    
+    </body>
+</html

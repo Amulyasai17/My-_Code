@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function check(data) {
+                result = typeof data;
+                var span = document.getElementById("result");
+                span.innerHTML = result;
+            }
+
+        </script>
+    </head>
+    <body>
+        <p> <strong> Check which type of date given! </strong> </p>
+        Enter Here : <input type="text" id="firstNum1"> <br>
+        <button type="button" onClick="check(firstNum1.value)"> Click </button> <br>
+        The result is : <br> <span id="result"></span>
+    
+    </body>
+</html>
