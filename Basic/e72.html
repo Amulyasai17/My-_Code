@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function check(a) {
+                if (a.length>=3) {
+                    return a[0] == a[a.length-1];
+                }
+                else {
+                    return "length must be >= 3"; 
+                }
+            }
+            document.write(check([1,2,3,4,5,1]));
+            document.write("<br>");
+            document.write(check([1,2]));
+        </script>
+    </head>
+</html>

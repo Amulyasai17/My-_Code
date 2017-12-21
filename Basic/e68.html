@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script>
+            function check(str,n) {
+                if (str.length > n) {
+                    return str.slice(0,n) + str.slice(-n);
+                }
+                else {
+                    return "The string lengthmust be greater than or = n " + n;
+                }
+            }
+            document.write(check("Supercalifragilisticexspialidocious",5));
+            document.write(check("amu",5));
+        </script>
+    </head>
+</html>

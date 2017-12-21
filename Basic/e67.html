@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function check(a) {
+                if (a.startsWith("P") && a.endsWith("P")) {
+                    return a.slice(1,-1);
+                }
+                else {
+                    return a;
+                }
+            }
+            document.write(check("PumP"));
+            document.write("<br>");
+            document.write(check('lamp'));
+        </script>
+    </head>
+</html>

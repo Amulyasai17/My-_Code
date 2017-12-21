@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function test(x) {
+                if (Math.abs( (x >= 40) && (x <= 60) ) ) {
+                    return "It is in the range of 40...60";
+                }
+                else if (Math.abs( (x >= 70) && (x <= 100) ) ){
+                    return "It is in the range of 70...100";
+                }
+                else {
+                    return "Not in range";
+                }
+            }
+            document.write(test(67) + "</br>");
+            document.write(test(44));
+        </script>
+    </head>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function divString(n1, n2) {
+                var div = Math.round(n1 / n2).toString();
+                result_array = div.split("");
+                if (n1>0 && n2>0) {
+                    return result_array;
+                }
+                else {
+                    return "type a positive value";
+                }
+            }
+            document.write(divString(1000, 2));
+        </script>
+    </head>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            function lastDigit(a,b,c) {
+                var a1 = a.toString().slice(-1);
+                var b1 = b.toString().slice(-1);
+                var c1 = c.toString().slice(-1);
+                if (a1 == b1 && a1 == c1) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+            document.write(lastDigit(-20,30,40));
+            document.write("<br>");
+            document.write(lastDigit(20,-45,-70));
+        </script>
+    </head>
+</html>

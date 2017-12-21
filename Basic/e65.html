@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script>
+            function addString(x) {
+                if (x.length >= 6) {
+                    return x.slice(-6) === 'Script';
+                }
+                else  {
+                    return false;
+                }
+            }
+            document.write(addString("JavaScript") + "<br>");
+            document.write(addString("python"));
+        </script>
+    </head>
+</html>
